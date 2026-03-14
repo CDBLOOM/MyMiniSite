@@ -52,6 +52,27 @@ weather patterns across the planet and has served as both a leader of the X-Men
 and a queen of Wakanda. Prior to meeting Prof. Xavier, she was hailed as a goddess amongst her people before finding out she's mutant.
 </p>
 
+<h2>Bonus</h2>
+
+<p>Click the button to see a random fact about these heroes.</p>
+
+<button onclick="showFact()">Random Hero Fact</button>
+
+<script>
+function showFact() {
+
+  const facts = [
+    "Spawn helped launch Image Comics in the 1990s.",
+    "Static Shock's show addressed real social issues rarely seen in cartoons.",
+    "Storm has led the X-Men multiple times and once ruled Wakanda."
+  ];
+
+  let randomFact = facts[Math.floor(Math.random() * facts.length)];
+
+  alert(randomFact);
+}
+</script>
+
 </body>
 
 </html>
